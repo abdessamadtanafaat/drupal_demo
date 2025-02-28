@@ -7,7 +7,11 @@ dependencies:
   module:
     - comment
     - contact
+    - eu_cookie_compliance
+    - file_entity
     - filter
+    - media
+    - recaptcha
     - search
     - system
 _core:
@@ -20,5 +24,9 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'administer recaptcha'
+  - 'display eu cookie compliance popup'
   - 'search content'
   - 'use text format restricted_html'
+  - 'view files'
+  - 'view media'

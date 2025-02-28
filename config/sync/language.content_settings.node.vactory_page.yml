@@ -1,0 +1,16 @@
+uuid: 9b6779ee-f903-437f-8fa8-f44f4c167835
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.vactory_page
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: node.vactory_page
+target_entity_type_id: node
+target_bundle: vactory_page
+default_langcode: site_default
+language_alterable: true

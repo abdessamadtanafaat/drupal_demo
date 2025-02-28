@@ -1,0 +1,30 @@
+uuid: 5bd44d60-ee34-4c95-b3b6-a01eed62a5d0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_field_news_body
+    - filter.format.basic_html
+    - filter.format.full_html
+    - filter.format.restricted_html
+    - node.type.news
+  module:
+    - text
+id: node.news.field_field_news_body
+field_name: field_field_news_body
+entity_type: node
+bundle: news
+label: field_news_body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - basic_html
+    - restricted_html
+    - full_html
+field_type: text_with_summary

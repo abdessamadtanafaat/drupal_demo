@@ -1,0 +1,25 @@
+uuid: 2653a9e6-99cc-4194-914a-e86abb8280f8
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - social_auth
+    - system
+  theme:
+    - olivero
+id: olivero_socialauthlogin
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: social_auth_login
+settings:
+  id: social_auth_login
+  label: 'Social Auth Login'
+  label_display: visible
+  provider: social_auth
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/user/login\r\n/user/register"

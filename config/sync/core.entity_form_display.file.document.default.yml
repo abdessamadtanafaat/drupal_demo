@@ -1,0 +1,27 @@
+uuid: e673b3ec-4e1e-4475-a5d5-8dc1a972e87f
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - file_entity.type.document
+id: file.document.default
+targetEntityType: file
+bundle: document
+mode: default
+content:
+  filename:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 13a72376-e73f-4b6e-9002-623badb00096
+langcode: en-gb
+status: true
+dependencies: {  }
+id: smtp_mailer_transport
+label: 'SMTP Mailer'
+plugin: smtp
+configuration:
+  user: ''
+  pass: ''
+  host: localhost
+  port: 1025
+  query:
+    verify_peer: true
+    local_domain: ''
+    restart_threshold: null
+    restart_threshold_sleep: null
+    ping_threshold: null

@@ -6,13 +6,19 @@ dependencies:
     - core.entity_view_display.comment.comment.default
     - field.field.node.article.body
     - field.field.node.article.comment
+    - field.field.node.article.field_document_upload
     - field.field.node.article.field_image
+    - field.field.node.article.field_link_testing
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_photo
     - field.field.node.article.field_tags
     - image.style.wide
     - node.type.article
   module:
     - comment
     - image
+    - link
+    - metatag
     - text
     - user
 _core:
@@ -38,6 +44,15 @@ content:
     third_party_settings: {  }
     weight: 110
     region: content
+  field_document_upload:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 112
+    region: content
   field_image:
     type: image
     label: hidden
@@ -48,6 +63,34 @@ content:
         attribute: eager
     third_party_settings: {  }
     weight: -1
+    region: content
+  field_link_testing:
+    type: link
+    label: above
+    settings:
+      trim_length: 20
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: _blank
+    third_party_settings: {  }
+    weight: 113
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_photo:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 111
     region: content
   field_tags:
     type: entity_reference_label
@@ -64,3 +107,4 @@ content:
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

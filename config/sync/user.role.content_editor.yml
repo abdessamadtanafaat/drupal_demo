@@ -9,7 +9,9 @@ dependencies:
   module:
     - comment
     - contextual
+    - eu_cookie_compliance
     - file
+    - file_entity
     - node
     - path
     - system
@@ -37,11 +39,13 @@ permissions:
   - 'delete own files'
   - 'delete own page content'
   - 'delete page revisions'
+  - 'display eu cookie compliance popup'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
   - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
+  - 'view files'
   - 'view own unpublished content'
   - 'view the administration theme'

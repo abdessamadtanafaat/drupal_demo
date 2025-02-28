@@ -1,0 +1,17 @@
+uuid: d6c820d2-c82c-40a9-9f9d-a8cf0bfbce67
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - security_review
+title: 'Default cron handler'
+id: security_review_cron
+weight: 0
+module: security_review
+callback: 'security_review#cron'
+scheduler:
+  id: simple
+launcher:
+  id: serial
+logger:
+  id: database

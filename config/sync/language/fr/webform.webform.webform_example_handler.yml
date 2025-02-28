@@ -1,0 +1,5 @@
+categories:
+  - Exemple
+handlers:
+  example:
+    label: Exemple

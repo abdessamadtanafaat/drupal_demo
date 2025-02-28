@@ -1,0 +1,25 @@
+uuid: af77f123-731c-4efa-a2e3-8b655262c1ef
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.bloc_news_v2
+  module:
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__bloc_news_v2_block_1
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:bloc_news_v2-block_1'
+settings:
+  id: 'views_block:bloc_news_v2-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

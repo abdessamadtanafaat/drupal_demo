@@ -1,0 +1,29 @@
+uuid: b9f566be-c3ff-4a5b-afe4-b718fbb815df
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_thematique
+    - node.type.news
+    - taxonomy.vocabulary.thematiques
+id: node.news.field_thematique
+field_name: field_thematique
+entity_type: node
+bundle: news
+label: Thématique
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      thematiques: thematiques
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

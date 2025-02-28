@@ -1,0 +1,13 @@
+uuid: c7c86c23-27d6-48a0-9f57-148832c8efe1
+langcode: en-gb
+status: true
+dependencies: {  }
+id: new_document
+label: 'New Document'
+description: 'A media type for storing document files.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map: {  }

@@ -1,0 +1,14 @@
+uuid: bce953ae-31cf-42c4-a42f-7b2e399b7f38
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - eu_cookie_compliance
+    - file_entity
+id: webmaster
+label: Webmaster
+weight: 4
+is_admin: false
+permissions:
+  - 'display eu cookie compliance popup'
+  - 'view files'

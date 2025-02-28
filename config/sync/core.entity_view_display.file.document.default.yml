@@ -1,0 +1,58 @@
+uuid: 793ce3b3-1d60-4595-9be2-eda4d4ce3c61
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - file_entity.type.document
+  module:
+    - file_entity
+id: file.document.default
+targetEntityType: file
+bundle: document
+mode: default
+content:
+  filemime:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  filename:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+  filesize:
+    type: file_size
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  uid:
+    type: uri_link
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  uri:
+    type: file_image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+      title: field_image_title_text
+      alt: field_image_alt_text
+    third_party_settings: {  }
+    weight: -5
+    region: content
+hidden:
+  langcode: true

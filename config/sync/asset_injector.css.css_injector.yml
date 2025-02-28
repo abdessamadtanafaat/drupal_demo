@@ -1,0 +1,18 @@
+uuid: 3146d309-699a-4df3-b652-f1cd8178f010
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - system
+id: css_injector
+label: 'css injector'
+code: '.view, .view-content { display: block !important; }'
+media: all
+preprocess: true
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /news
+contexts: {  }
+conditions_require_all: true

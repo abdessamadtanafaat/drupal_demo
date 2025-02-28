@@ -58,6 +58,8 @@ settings:
         - '<h4 id>'
         - '<h5 id>'
         - '<h6 id>'
+    linkit_extension:
+      linkit_enabled: false
 image_upload:
   status: true
   scheme: public

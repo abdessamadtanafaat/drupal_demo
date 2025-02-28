@@ -1,0 +1,24 @@
+uuid: 68d6b128-7621-4ffd-a4cc-a8489a0439b1
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description_about_us
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.about_us
+  module:
+    - text
+id: paragraph.about_us.field_description_about_us
+field_name: field_description_about_us
+entity_type: paragraph
+bundle: about_us
+label: Description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text

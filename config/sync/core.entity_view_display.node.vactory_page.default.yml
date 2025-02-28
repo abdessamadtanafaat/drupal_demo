@@ -1,0 +1,32 @@
+uuid: e6705995-d2bd-45d8-b3ed-bc99eea6c7a0
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.vactory_page.field_component
+    - node.type.vactory_page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.vactory_page.default
+targetEntityType: node
+bundle: vactory_page
+mode: default
+content:
+  field_component:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

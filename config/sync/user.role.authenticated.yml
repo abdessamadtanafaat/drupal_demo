@@ -4,11 +4,15 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.webform_default
   module:
     - comment
     - contact
+    - eu_cookie_compliance
     - file
+    - file_entity
     - filter
+    - media
     - search
     - shortcut
     - system
@@ -24,7 +28,11 @@ permissions:
   - 'access shortcuts'
   - 'access site-wide contact form'
   - 'delete own files'
+  - 'display eu cookie compliance popup'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
   - 'use text format basic_html'
+  - 'use text format webform_default'
+  - 'view files'
+  - 'view media'
