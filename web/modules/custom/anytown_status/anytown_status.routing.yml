@@ -1,0 +1,18 @@
+anytown_status.status_update:
+  # This slug allows for URLs like /node/42/status.
+  path: '/node/{node}/status'
+  defaults:
+    _title: 'Weekly status update'
+    _form: 'Drupal\anytown_status\Form\StatusUpdateForm'
+  requirements:
+    # This isn't a great permission for this task, but we'll fix it later.
+    _permission: 'access content'
+    #the following lines is not working for showing the attendance only for who have the permission to the attandance page
+    #_entity_access: 'node.update'
+#  options:
+#    parameters:
+#      node:
+#        type: entity.node
+#        bundle:
+#          - vendor
+

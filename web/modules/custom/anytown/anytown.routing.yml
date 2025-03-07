@@ -1,0 +1,20 @@
+anytown.weather_page:
+  # /weather/extended or /weather/short
+  path: '/weather/{style}'
+  defaults:
+    _title: 'Weather at the market'
+    _controller: '\Drupal\anytown\Controller\WeatherPage::build'
+    style: 'short'
+  requirements:
+    _permission: 'view weekly weather'
+
+# Settings form route.
+anytown.settings:
+  path: '/admin/config/system/anytown'
+  defaults:
+    _title: 'Anytown Settings'
+    # For form controllers use _form instead of _controller. This tells Drupal
+    # to use the build, validate, submit workflow for a form.
+    _form: 'Drupal\anytown\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'

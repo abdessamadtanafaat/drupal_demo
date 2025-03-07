@@ -1,0 +1,7 @@
+name: Anytown
+type: module
+description: 'anytown custom module'
+package: Custom
+version: 1.0
+core_version_requirement: ^8 || ^10 || ^11
+dependencies: []

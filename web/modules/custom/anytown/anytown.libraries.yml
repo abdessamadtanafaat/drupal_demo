@@ -1,0 +1,9 @@
+#Globally known as anytown/forecast
+forecast:
+  css:
+    component:
+      assets/css/forecast.css: {}
+  js:
+    assets/js/forecast.js: {}
+  dependencies:
+    - core/drupal.once

@@ -1,0 +1,8 @@
+hello_world.hellomsg:
+  path: '/hello-world'
+  defaults:
+    _controller: 'Drupal\hello_world\Controller\HelloWorldController::message'
+    _title: 'Hello world'
+  requirements:
+    _permission: 'access content'
+

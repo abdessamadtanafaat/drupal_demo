@@ -1,0 +1,15 @@
+{
+    "name": "tanafaat/helloblock_module",
+    "type": "drupal-module",
+    "description": "A custom module",
+    "version": "1.0.0",
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Drupal\\hello_block\\": "src/"
+        }
+    }
+
+}

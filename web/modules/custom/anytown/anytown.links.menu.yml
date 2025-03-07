@@ -1,0 +1,11 @@
+anytown.weather:
+  title: Weather
+  description: Check this weeks weather
+  route_name: anytown.weather_page
+  menu_name: main
+
+anytown.settings:
+  title: Anytown Settings
+  route_name: anytown.settings
+  parent: system.admin_config_system
+  weight: 10

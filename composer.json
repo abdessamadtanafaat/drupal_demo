@@ -20,6 +20,7 @@
             "priority": 1
 
         }
+
     ],
     "require": {
         "composer/installers": "^2.3",
@@ -68,6 +69,7 @@
         "drupal/ultimate_cron": "^2.0@beta",
         "drupal/webform": "^6.3@beta",
         "drush/drush": "^13.3"
+
     },
     "conflict": {
         "drupal/drupal": "*"

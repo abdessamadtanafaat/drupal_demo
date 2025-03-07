@@ -1,0 +1,9 @@
+hello_block.hellomsg:
+  path: '/hello-block'
+  defaults:
+    _controller: 'Drupal\hello_block\Controller\HelloBlockController::content'
+    _title: 'Hello Block'
+  requirements:
+    _permission: 'access content'
+
+
