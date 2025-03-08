@@ -24,6 +24,7 @@ class ExerciceModuleForm extends FormBase {
    * Builds the form with a select field to choose a node and a submit button.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+
     // Fetch available nodes to display in the select dropdown.
     $options = $this->getNodeOptions();
 
@@ -80,10 +81,8 @@ class ExerciceModuleForm extends FormBase {
     // Get the selected node ID from the form submission.
     $selected_nid = $form_state->getValue('selected_node');
 
-    // Store the selected node ID in the private session storage of the user.
-    \Drupal::service('user.private_tempstore')->get('my_custom_module')->set('selected_node', $selected_nid);
+    // state() stores data globally for all users, which is not recommended for per-user data.
+    \Drupal::service('tempstore.private')->get('exercice_module')->set('selected_node', $selected_nid);
 
-    // Redirect the user to a page displaying the selected node.
-    $form_state->setRedirect('my_custom_module.display', ['node' => $selected_nid]);
   }
 }

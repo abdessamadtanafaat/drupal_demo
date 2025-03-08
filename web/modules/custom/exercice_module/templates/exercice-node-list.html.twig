@@ -1,0 +1,13 @@
+<div class="selected-node">
+  <h2>{{ selected_title }}</h2>
+</div>
+{% if node_list %}
+<h3>Related Nodes:</h3>
+  <ul class="node-list">
+    {% for node in node_list %}
+      <li><a href="{{ node.url }}">{{ node.label }}</a></li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No related nodes found.</p>
+{% endif %}

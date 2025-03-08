@@ -1,0 +1,16 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function exercice_module_theme() {
+  return [
+    'exercice_node_list' => [
+      'variables' => [
+        'selected_title' => NULL,
+        'node_list' => [],
+      ],
+    ],
+  ];
+}
+
