@@ -1,0 +1,6 @@
+name: 'Exercice Custom Module'
+type: module
+description: 'Drupal Developpment Exercice.'
+core_version_requirement: ^10 || ^11
+package: Custom
+dependencies: []

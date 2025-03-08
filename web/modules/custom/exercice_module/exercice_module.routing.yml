@@ -1,0 +1,7 @@
+exercice_custom_module.form:
+  path: '/exercice'
+  defaults:
+    _form: '\Drupal\exercice_module\Form\ExerciceModuleForm'
+    _title: 'Select a Node'
+  requirements:
+    _permission: 'access content'
