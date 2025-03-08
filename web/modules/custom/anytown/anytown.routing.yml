@@ -18,3 +18,11 @@ anytown.settings:
     _form: 'Drupal\anytown\Form\SettingsForm'
   requirements:
     _permission: 'administer site configuration'
+
+anytown.attending:
+  path: '/attending'
+  defaults:
+    _title: 'Attending'
+    _controller: '\Drupal\anytown\Controller\Attending::build'
+  requirements:
+    _permission: 'access content'
