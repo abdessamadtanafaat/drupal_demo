@@ -49,6 +49,7 @@
         "drupal/metatag": "^2.1",
         "drupal/minifyhtml": "^2.0",
         "drupal/paragraphs": "^1.18",
+        "drupal/password_policy": "^4.0",
         "drupal/path_redirect_import": "^2.1",
         "drupal/pathauto": "^1.13",
         "drupal/persistent_login": "^2.2",
@@ -69,7 +70,6 @@
         "drupal/ultimate_cron": "^2.0@beta",
         "drupal/webform": "^6.3@beta",
         "drush/drush": "^13.3"
-
     },
     "conflict": {
         "drupal/drupal": "*"
