@@ -1,0 +1,5 @@
+name: 'Access Result Test'
+type: module
+description: 'Module to test the AccessResult feature'
+package: Custom
+core_version_requirement: ^10 || ^11

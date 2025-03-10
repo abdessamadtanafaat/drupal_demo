@@ -1,0 +1,7 @@
+my_module.custom_page:
+  path: '/access-page'
+  defaults:
+    _controller: '\Drupal\access_result_test\Controller\Controller::accessPage'
+    _title: 'Access Page'
+  requirements:
+    _custom_access: '\Drupal\access_result_test\Access\AccessCheck::access'
