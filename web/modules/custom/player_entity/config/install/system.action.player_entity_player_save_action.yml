@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - player_entity
+id: player_entity_player_save_action
+label: 'Save players'
+type: player_entity_player
+plugin: entity:save_action:player_entity_player
+configuration: {  }

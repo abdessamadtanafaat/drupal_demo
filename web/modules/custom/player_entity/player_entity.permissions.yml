@@ -1,0 +1,3 @@
+administer player_entity_player:
+  title: 'Administer players'
+  restrict access: true

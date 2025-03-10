@@ -1,0 +1,7 @@
+entity.player_entity_player.settings:
+  path: 'admin/structure/player-entity-player'
+  defaults:
+    _form: '\Drupal\player_entity\Form\PlayerSettingsForm'
+    _title: 'Player'
+  requirements:
+    _permission: 'administer player_entity_player'

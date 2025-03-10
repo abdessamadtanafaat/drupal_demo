@@ -1,0 +1,22 @@
+entity.player_entity_player.settings:
+  title: 'Settings'
+  route_name: entity.player_entity_player.settings
+  base_route: entity.player_entity_player.settings
+entity.player_entity_player.view:
+  title: 'View'
+  route_name: entity.player_entity_player.canonical
+  base_route: entity.player_entity_player.canonical
+entity.player_entity_player.edit_form:
+  title: 'Edit'
+  route_name: entity.player_entity_player.edit_form
+  base_route: entity.player_entity_player.canonical
+entity.player_entity_player.delete_form:
+  title: 'Delete'
+  route_name: entity.player_entity_player.delete_form
+  base_route: entity.player_entity_player.canonical
+  weight: 10
+entity.player_entity_player.collection:
+  title: 'Players'
+  route_name: entity.player_entity_player.collection
+  base_route: system.admin_content
+  weight: 10

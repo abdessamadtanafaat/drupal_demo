@@ -1,0 +1,11 @@
+entity.player_entity_player.settings:
+  title: 'Player'
+  description: 'Configure a Player entity type.'
+  route_name:  entity.player_entity_player.settings
+  parent: system.admin_structure
+
+entity.player_entity_player.collection:
+  title: 'Players'
+  description: 'List of players.'
+  route_name: entity.player_entity_player.collection
+  parent: system.admin_content
