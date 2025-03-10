@@ -1,0 +1,7 @@
+field_fetcher_module.field_definition:
+  path: '/fetch-field-definition'
+  defaults:
+    _controller: '\Drupal\field_fetcher_module\Controller\FieldFetcherController::getFieldInfo'
+    _title: 'Field Definition'
+  requirements:
+    _permission: 'access content'

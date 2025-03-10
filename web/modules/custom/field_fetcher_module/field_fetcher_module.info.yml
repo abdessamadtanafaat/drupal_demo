@@ -1,0 +1,5 @@
+name: 'Field Fetcher Module'
+type: module
+description: 'A module to fetch field definitions'
+package: Custom
+core_version_requirement: ^10 || ^11
